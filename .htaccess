@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteCond %{localhost/viewster/trending} !-d
+RewriteCond %{localhost/viewster/trending.php}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
